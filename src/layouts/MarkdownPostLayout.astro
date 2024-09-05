@@ -1,0 +1,12 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { frontmatter } = Astro.props;
+import { Image } from 'astro:assets';
+import blogPost1Image from '../golden.jpg';
+---
+<BaseLayout pageTitle={frontmatter.title}>
+<img src={frontmatter.image.src} width={frontmatter.image.width} height={frontmatter.image.height} alt={frontmatter.image.alt} />
+<p>Written by {frontmatter.author}</p>
+<p>Date published {frontmatter.pubDate}</p>
+<slot />
+</BaseLayout>

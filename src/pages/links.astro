@@ -1,0 +1,36 @@
+---
+import Header from '../components/Header.astro';
+import "../styles/global.css";
+import Footer from '../components/Footer.astro';
+const pageTitle = "Malone Wolf!!";
+---
+	<body>
+		<style>
+			.icon {
+				border: solid black 1px;
+				border-radius: 50%;
+			}
+			.posts-box {
+				display: grid;
+				
+				width: 500px;
+				height: 500px;
+				border: solid black 1px;
+				place-content: center;
+			}
+			h1 {
+				margin: 0 auto;
+			}
+		</style>
+
+<Header />
+<h1>{pageTitle}</h1>
+	<div class="posts-box">
+<h2> So this what's been goin' down, Ma...</h2>
+    </div>
+	<Footer />
+	<script>
+		import "../scripts/menu.js";
+		</script>
+	</body>
+</html>

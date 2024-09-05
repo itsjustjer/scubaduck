@@ -8,9 +8,33 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<style>
+			.icon {
+				border: solid black 1px;
+				border-radius: 50%;
+			}
+			.box {
+				display: grid;
+				grid-template-columns: 2fr 2fr 1fr;
+				width: 500px;
+				height: 500px;
+				border: solid black 1px;
+				place-content: center;
+			}
+			h1 {
+				margin: 0 auto;
+			}
+		</style>
+		<div class="box">
+			
+			<h1>Astro</h1>
+			<h1>My Astro Site</h1>
+			<img src="favicon.svg" class="icon" title="favicon" width="50px" height="50px"/>
+		</div>
+	
 	</body>
 </html>
